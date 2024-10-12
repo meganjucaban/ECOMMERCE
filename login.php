@@ -4,7 +4,7 @@
     <?php require_once("includes/navbar.php") ?>
 
     <!-- Login Form -->
-    <div class="container mt-5">
+    <div class="container content my-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card">
@@ -37,7 +37,4 @@
     
     
 
-    <!-- Bootstrap 5 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+    <?php require_once("includes/footer.php")?>
