@@ -7,7 +7,6 @@ session_start();
 
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-        //connect to database
         $host = "localhost";
         $database = "ecommerceb2";
         $dbusername = "root";
