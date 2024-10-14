@@ -1,6 +1,6 @@
 <?php 
 //RECEIVE USER INPUT
-$fullname = $_POST["fullName"];
+$fullname = $_POST["fullname"];
 $username = $_POST["username"];
 $password = $_POST["password"];
 $confirmPassword = $_POST["confirmPassword"];
