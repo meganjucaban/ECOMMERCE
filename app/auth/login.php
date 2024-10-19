@@ -26,13 +26,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             if($users){
     
                 if(password_verify($password,$users[0]["password"])){
-                    echo "Login Successful";
+                    header("location: /index.php");
                     $_SESSION["fullname"] = $users[0]["fullname"];
+                    exit;
                 } else {
-                    echo "Password did not match";
+                    header("location: /login.php?");
+                    $_SESSION["error"] = "Wrong Password";
+                    exit;
                 }
             } else {
-                echo "user not exist";
+                header("location: /login.php?");
+                $_SESSION["error"] = "User Not Found";
+                exit;
             }
 
         } catch (Exception $e){
