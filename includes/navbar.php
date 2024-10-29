@@ -9,29 +9,27 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="<?php echo BASE_URL; ?>index.php">Home</a>
                     </li>
-                    <?php if(!isset($_SESSION["username"])) {?>
+                    <?php if(!isset($_SESSION["username"])) { ?>
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo BASE_URL; ?>login.php">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo BASE_URL; ?>registration.php">Register</a>
                     </li>
-                    <?php }?>
+                        <?php } ?>
                     <?php if(isset($_SESSION["username"]) && (isset($_SESSION["is_admin"]) && $_SESSION["is_admin"] == "1")) { ?>
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo BASE_URL; ?>views/admin/products/index.php">Products</a>
-                        </li>
+                    </li>
                         <?php } ?>
-                        <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="<?php echo BASE_URL; ?>cart.php">Cart</a>
                     </li>
-                    
-                    
 
-                    
 
-                     <!-- Dropdown for Signed-in User -->
-                      <?php if(isset($_SESSION["fullname"])){ ?>
+              
+                    <!-- Dropdown for Signed-in User -->
+                      <?php if(isset($_SESSION["fullname"])) { ?>
                      <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <?php echo $_SESSION["fullname"]; ?> 
@@ -42,7 +40,7 @@
                             <li><hr class="dropdown-divider"></li>
                             <li>
                                 <form action="/logout.php" method="POST">
-                                <button class="dropdown-item">Logout</button>
+                                    <button class="dropdown-item">Logout</button>
                                 </form>
                             </li>
                         </ul>
@@ -51,4 +49,4 @@
                 </ul>
             </div>
         </div>
-    </nav>
+</nav>

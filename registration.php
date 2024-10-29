@@ -15,7 +15,7 @@ if(isset($_SESSION["success"])){
 ?>
 
     <!-- Navbar -->
-    <?php require_once("includes/navbar.php") ?>
+    <?php require_once(ROOT_DIR."includes/navbar.php"); ?>
 
     <!-- Registration Form -->
     <div class="container content my-5">

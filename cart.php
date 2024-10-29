@@ -1,7 +1,7 @@
 <?php 
-session_start();
-require_once($_SERVER["DOCUMENT_ROOT"]."/app/config/Directories.php");
-require_once("includes/header.php");
+    session_start();
+    require_once($_SERVER["DOCUMENT_ROOT"]."/app/config/Directories.php");
+    require_once("includes/header.php");
 ?>
 
 <!-- Navbar -->
@@ -51,33 +51,33 @@ require_once("includes/header.php");
                     <div class="card-header bg-primary text-white">
                         <h4>Order Summary</h4>
                     </div>
-                    <div class="card-body">
-                        <p>Subtotal: <span class="float-end">$130.00</span></p>
-                        <p>Shipping: <span class="float-end">$10.00</span></p>
-                        <hr>
-                        <h5>Total: <span class="float-end">$140.00</span></h5>
+                            <div class="card-body">
+                                <p>Subtotal: <span class="float-end">$130.00</span></p>
+                                <p>Shipping: <span class="float-end">$10.00</span></p>
+                                <hr>
+                                <h5>Total: <span class="float-end">$140.00</span></h5>
 
-                        <!-- Payment Method Selection -->
-                        <div class="mt-4">
-                            <label for="paymentMethod" class="form-label">Select Payment Method</label>
-                            <select class="form-select" id="paymentMethod" required>
-                                <option value="credit">Credit/Debit Card</option>
-                                <option value="paypal">PayPal</option>
-                                <option value="gcash">GCash</option>
-                            </select>
-                        </div>
+                                <!-- Payment Method Selection -->
+                                <div class="mt-4">
+                                    <label for="paymentMethod" class="form-label">Select Payment Method</label>
+                                        <select class="form-select" id="paymentMethod" required>
+                                            <option value="credit">Credit/Debit Card</option>
+                                            <option value="paypal">PayPal</option>
+                                            <option value="gcash">GCash</option>
+                                        </select>
+                                </div>
 
-                        <!-- Payment Details -->
-                        <div class="mt-3">
-                            <label for="cardNumber" class="form-label">Card/Account Number</label>
-                            <input type="text" class="form-control" id="cardNumber" placeholder="Enter your card or account number" required>
-                        </div>
+                                <!-- Payment Details -->
+                                <div class="mt-3">
+                                    <label for="cardNumber" class="form-label">Card/Account Number</label>
+                                        <input type="text" class="form-control" id="cardNumber" placeholder="Enter your card or account number" required>
+                                </div>
 
-                        <!-- Confirm Payment Button -->
-                        <div class="d-grid gap-2 mt-4">
-                            <button type="submit" class="btn btn-success">Confirm Payment</button>
-                        </div>
-                    </div>
+                                <!-- Confirm Payment Button -->
+                                <div class="d-grid gap-2 mt-4">
+                                    <button type="submit" class="btn btn-success">Confirm Payment</button>
+                                </div>
+                            </div>
                 </div>
             </div>
         </div>

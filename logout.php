@@ -10,7 +10,7 @@ require_once("includes/header.php");
 ?>
 
     <!-- Navbar -->
-    <?php require_once("includes/navbar.php") ?>
+    <?php require_once(ROOT_DIR."includes/navbar.php"); ?>
 
     <div class="container vh-100 d-flex justify-content-center align-items-center">
         <div class="card text-center shadow p-3" style="width: 24rem;">
