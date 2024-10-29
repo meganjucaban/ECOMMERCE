@@ -1,7 +1,7 @@
 <?php 
+require_once($_SERVER["DOCUMENT_ROOT"]."/app/config/Directories.php");
 session_start();
 require_once("includes/header.php");
-require_once($_SERVER["DOCUMENT_ROOT"]."/app/config/Directories.php");
 
 if(isset($_SESSION["error"])){
     $messErr = $_SESSION["error"];
