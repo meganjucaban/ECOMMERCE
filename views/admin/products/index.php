@@ -40,7 +40,7 @@
                         <strong><?php echo $messErr; ?></strong>
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
-                        <?php } ?>
+        <?php } ?>
 
         <p class="text-center">Manage all products in the catalog</p>
         <hr>
