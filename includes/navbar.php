@@ -39,8 +39,8 @@
                             <li><a class="dropdown-item" href="profile.html">Profile</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li>
-                                <form action="/logout.php" method="POST">
-                                    <button class="dropdown-item">Logout</button>
+                                <form action="<?php echo BASE_URL; ?>logout.php" method="POST">
+                                    <button type="submit" class="dropdown-item">Logout</button>
                                 </form>
                             </li>
                         </ul>
