@@ -9,8 +9,9 @@
             <a href="<?php echo BASE_URL; ?>login.php" class="btn btn-primary">Go to Login</a>
         </div>
     </div> 
-    </body>
-    </html>
+
+    <?php require_once(ROOT_DIR."includes/footer.php"); ?>
+
     <?php 
     exit;
     }
