@@ -56,7 +56,7 @@
                     include(ROOT_DIR.'views/components/product-card.php');
                 }
             ?>
-
+            
             <!-- Add more product cards dynamically based on your backend data -->
         </div>
     </div>
