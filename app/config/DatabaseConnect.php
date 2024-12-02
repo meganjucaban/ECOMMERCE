@@ -1,9 +1,9 @@
 <?php 
 class DatabaseConnect {
     private $host = "localhost";
-    private $database = "ecommerceb2";
-    private $dbusername = "root";
-    private $dbpassword = "";
+    private $database = "ecommerceb2"; //"ecommerce_mjucaban";
+    private $dbusername = "root";      //"mjucaban";
+    private $dbpassword = "";          //"M7uc4ban_2024";
     private $charset    = 'utf8mb4';
     private $conn = null;
 
