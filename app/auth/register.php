@@ -13,9 +13,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         //CONNECT DATABASE
         
         $host = "localhost";
-        $database = /*"ecommerce_mjucaban";*/ "ecommerceb2";
-        $dbusername = /*"mjucaban";*/         "root";
-        $dbpassword = /*"M7uc4ban_2024";*/    "";
+        $database = "ecommerce_mjucaban"; //"ecommerceb2";
+        $dbusername = "mjucaban";         //"root";
+        $dbpassword = "M7uc4ban_2024";    //"";
         
         $dsn = "mysql: host=$host;dbname=$database;";
         try {
